@@ -35,6 +35,6 @@ public class HttpService implements HttpSubject {
 
     public void makeRequest() {
         System.out.println("Making request....");
-        notifyAll();
+        notifyAllObserve();
     }
 }
