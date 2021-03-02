@@ -8,8 +8,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class HttpService implements HttpSubject {
-    private HttpClient httpClient;
-    private List<Observer> observerList = new LinkedList();
+    private final HttpClient httpClient;
+    private final List<Observer> observerList = new LinkedList();
 
     public HttpService(String host, Long port, String path, HttpMethod method) {
         httpClient = new HttpClient();
